@@ -1,0 +1,3 @@
+# Define resources for Vertex AI Feature Store
+# Customize this section to set up and manage feature schemas, pipelines, etc.
+# ...
