@@ -1,0 +1,3 @@
+# Define resources for Vertex AI endpoints, versions, and deployments
+# Customize this section to create and manage Vertex AI endpoints and models
+# ...
