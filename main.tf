@@ -23,10 +23,16 @@ module "vector_search" {
 }
 
 # Include the workbench module
-module "workbench" {
-  source = "./modules/workbench"
-  # Define workbench variables here
+module "vertex_workbench" {
+  source = "./modules/vertex_workbench"
+  
+  project_id            = "your-project-id"
+  location             = "us-central1" # Change to your preferred location
+  display_name         = "MyWorkbench"
+  container_image_uri  = "gcr.io/my-project/workbench-image:latest"
+  service_account_email = "service-account@your-project.iam.gserviceaccount.com"
 }
+
 
 # Include the endpoint module
 module "endpoint" {
